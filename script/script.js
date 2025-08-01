@@ -11,6 +11,7 @@ function clickToAddRemove(id){
     const plus = getValueById("plus");
     const gearDown = minus - 1;
     const gearUp = plus + 1;
+    // gearDown.style.text = "bold"
     document.getElementById("minus").innerText = gearDown;
     document.getElementById("plus").innerText = gearUp;
 
