@@ -1,7 +1,7 @@
-document.getElementById("discover")
-.addEventListener("click",function(){
-    window.location.href = "../discover.html"
-})
+// document.getElementById("discover")
+// .addEventListener("click",function(){
+//     window.location.href = "../discover.html"
+// })
 
 function clickToAddRemove(id){
     const total = document.getElementById(id)
@@ -11,32 +11,26 @@ function clickToAddRemove(id){
     const plus = getValueById("plus");
     const gearDown = minus - 1;
     const gearUp = plus + 1;
-    // gearDown.style.text = "bold"
+    
     document.getElementById("minus").innerText = gearDown;
     document.getElementById("plus").innerText = gearUp;
 
     const valued = document.getElementById(id).value;
-
-    // const clickTime = recentTimeDate();
-    // console.log(clickTime)
-
+    
     const history = document.getElementById("history");
-
+    
     const P = document.createElement("p");
     P.innerText = `
         You have completed the task ${valued} at ${clickingTime()}  
     `
     P.classList.add("newPClass")
     history.appendChild(P);
-
+    
     if( minus === 1 ){
         alert("Congrates!!! You have completed all the current task")
     }
-    else{
-        
-    }
-    
-    
+    else{        
+    }        
 })
 return total;
 }
@@ -51,6 +45,7 @@ document.getElementById("clearHistory").addEventListener("click", function(){
     document.getElementById("history").style.display = "none";
     
 })
+
 document.getElementById("changeBgColor").addEventListener("click", function(){
     document.getElementById("body").style.backgroundColor = changeColor();
 })
