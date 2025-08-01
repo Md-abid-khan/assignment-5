@@ -1,0 +1,13 @@
+.newPClass{
+    background-color: silver;
+    border-radius: 20px;
+    text-align: center;
+    height: 80px;
+    /* margin: 5px;
+    /* padding: 2px; */
+    
+}
+hr{
+    border: 1px dotted black;
+    
+}

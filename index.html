@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- DaisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font (poppins) Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="bg-slate-300 p-5 min-h-screen">
+    <header class="flex items-center justify-between  bg-slate-200 p-4 rounded-lg ">
+        <nav class="flex items-center gap-1">
+            <img class="w-10 h-10" src="./assets/logo.png" alt="">
+            <p class="text-2xl">Dev<b>Board</b></p>
+        </nav>
+        <nav class="flex items-center gap-6">
+            <div class="flex items-center gap-2 bg-slate-100 p-2 rounded-full">
+                <img src="./assets/checkbox.png" alt="">
+                <p id="plus" class="text-xl"><b>23</b></p>
+            </div>
+            <button id="changeBgColor"><img class="bg-slate-100 p-2 rounded-full" src="./assets/theme-btn.png" alt=""></button>
+        </nav>
+
+        
+    </header>
+    <main class="mt-5 p-1">
+        <section class="grid grid-cols-3 gap-5">
+            <div class="col-span-2 bg-slate-200 rounded-lg">
+                <section class="flex justify-between mt-4 p-2 ">
+                    <div class="flex items-center gap-3 bg-gradient-to-r from-slate-400 to-slate-100 p-5 rounded-lg w-70">
+                        <img src="./assets/checkbox.png" alt="">
+                        <div>
+                            <small>Task Assignment</small>
+                            <h1 id="minus" class="text-xl"><b>06</b></h1>
+                        </div>
+                    </div>
+                    <div id="discover" class="flex items-center gap-5 bg-gradient-to-r from-blue-700 to-blue-200 rounded-lg p-5 w-150">
+                        <img src="./assets/board.png" alt="">
+                        <h1 class="font-extrabold text-white text-2xl ">Discover Something <br> New Today!</h1>
+                    </div>
+                    <div class="flex w-70  p-5 gap-3 bg-gradient-to-r from-slate-400 to-slate-100 rounded-lg items-center">
+                        <img class="w-10 h-10 p-2 bg-slate-100 rounded-full" src="./assets/calender.png" alt="">
+                        <div id="timeDate">
+                            <!-- <p>Wed ,</p> -->
+                            <!-- <h1><b>Jul 28 2025</b></h1> -->
+                        </div>
+                    </div>
+                </section><br>
+                <hr>
+                <section class="grid grid-cols-3 gap-5 mt-5 p-2  bg-slate-200 rounded-lg">
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <small class="bg-slate-200 p-2 rounded-md">ShopEase</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b>Fix Mobile Button Issue</b></h1>
+                        <p class="bg-slate-200 p-2 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                        </p>
+                        <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                    <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Fix Mobile Button Issue" onclick="this.disabled = true;" id="complete" class=" btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                                </div>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <small class="bg-slate-200 p-2 rounded-md">CloudSync</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b>Add Dark Mode</b></h1>
+                         <p class="bg-slate-200 p-2 rounded-lg">
+Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Add Dark Mode" id="complete1" onclick="this.disabled = true;" class="btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                               </div>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <small class="bg-slate-200 p-2 rounded-md">SwiftPay</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b> Optimize  Home page</b></h1>
+                         <p class="bg-slate-200 p-2 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Optimize  Home page" id="complete2" onclick="this.disabled = true;"  class="btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                                </div>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <small class="bg-slate-200 p-2 rounded-md">Meta</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b>Add new emoji 🤲</b></h1>
+                         <p class="bg-slate-200 p-2 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Add new emoji 🤲" id="complete3" onclick="this.disabled = true;"  class="btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                                </div>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-lg">
+                        <small class="bg-slate-200 p-2 rounded-md">Google LLC</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b>Integrate OpenAI API </b></h1>
+                         <p class="bg-slate-200 p-2 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Integrate OpenAI API" id="complete4" onclick="this.disabled = true;"  class="btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                            </div>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-lg ">
+                        <small class="bg-slate-200 p-2 rounded-md">Glassdoar</small>
+                        <h1 class="text-2xl mt-2 mb-2"><b>Improve Job searching </b></h1>
+                         <p class="bg-slate-200 p-2 rounded-lg">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </p>
+                            <div class="flex items-center justify-between mt-2">
+                                <div>
+                                    <small>Deadline</small>
+                                <h1><b>21 March 2025</b></h1>
+                                </div>
+                                <button value="Improve Job searching" id="complete5" onclick="this.disabled = true;"  class="btn bg-blue-600 text-white rounded-lg">Complete</button>
+
+                            </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="col-span-1 bg-slate-200 rounded-lg">
+               <div class="flex justify-center items-center flex-col p-5 mt-5">
+                 <div class="flex items-center gap-2">
+                    <img src="./assets/activity.png" alt="">
+                    <h1 class="text-xl">Activity Log</h1>
+                </div>
+                <button id="clearHistory" class="btn bg-blue-600 text-white rounded-lg mt-3">Clear History</button>
+               </div>
+               <hr>
+               <div id="history" class="flex flex-col gap-3 p-5 ">
+
+               </div>
+            
+            </div>
+            
+
+
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+    <script src="./script/script.js"></script>
+    <script src="./script/shortCut.js"></script>
+</body>
+</html>
